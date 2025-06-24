@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 To-Do App (Next.js + Zustand + Tailwind CSS)
 
-## Getting Started
+This is a simple, clean, and responsive To-Do application built using **Next.js**, **Zustand** for state management, and **Tailwind CSS** for styling. The UI is designed to be pixel-perfect based on Figma designs, with smooth interactions and clearly defined task sections.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+* 📋 Add, edit, and delete tasks
+* ✅ Status support: Pending, In Progress, Completed
+* 📂 Group tasks using Accordion by status
+* 🎯 Task card with avatar, description, date, and actions
+* 💾 Zustand-based local state management
+* 🌐 Responsive layout with pixel-perfect CSS using Tailwind
+* 🔥 Smooth hover states and transition effects
+
+---
+
+## 🧱 Tech Stack
+
+* **Next.js 14 (App Router)**
+* **TypeScript**
+* **Zustand** for global state
+* **Tailwind CSS**
+* **ShadCN/UI components**
+* **Lucide Icons**
+* **Sonner** for toast notifications
+
+---
+
+## 📁 Folder Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+/components         # UI components like TaskCard, Accordion, Input
+/pages              # App routes
+/store              # Zustand store
+/styles             # Global styles and Tailwind config
+/public             # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Setup Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/your-username/todo-app
+cd todo-app
+npm install
+npm run dev
+```
 
-## Learn More
+Visit `http://localhost:3000` in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* No external backend required – all data is stored in Zustand state.
+* Use the "Add Task" button to create a new task.
+* Edit or delete tasks via the action buttons on each task card.
+* Status dropdown on the edit screen dynamically updates task status.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 UI Screens
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Home Page: Header, Search, Accordion by status
+* Add Task Page: Title, Description input
+* Edit Task Page: Pre-filled values + Status dropdown
+
+---
+
+## 📃 License
+
+MIT
+
+---
+
+Enjoy building and customizing your To-Do app! ✨
